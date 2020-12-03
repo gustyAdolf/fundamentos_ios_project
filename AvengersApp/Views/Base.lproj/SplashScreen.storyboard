@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vat-U7-Ipw">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="yb6-Sc-PwJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vat-U7-Ipw" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4FG-Uc-RT6">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="r9g-xZ-W8t" kind="relationship" relationship="rootViewController" id="hog-iq-gmZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mJo-M8-BfV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1778" y="2"/>
+        </scene>
+        <!--Splash View Controller-->
+        <scene sceneID="Kpz-p5-bUa">
+            <objects>
+                <viewController id="r9g-xZ-W8t" customClass="SplashViewController" customModule="AvengersApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="grm-EM-bo9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_launch" translatesAutoresizingMaskIntoConstraints="NO" id="gTE-n0-3dl">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="b1N-QK-wMH">
+                                <rect key="frame" x="165" y="357" width="20" height="20"/>
+                                <color key="color" systemColor="systemYellowColor"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UJM-fd-vwQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="b1N-QK-wMH" firstAttribute="leading" secondItem="UJM-fd-vwQ" secondAttribute="leading" constant="165" id="7kj-eT-gkg"/>
+                            <constraint firstItem="UJM-fd-vwQ" firstAttribute="trailing" secondItem="b1N-QK-wMH" secondAttribute="trailing" constant="229" id="FVr-bn-XZq"/>
+                            <constraint firstItem="gTE-n0-3dl" firstAttribute="top" secondItem="grm-EM-bo9" secondAttribute="top" id="Fa1-2f-nye"/>
+                            <constraint firstItem="UJM-fd-vwQ" firstAttribute="bottom" secondItem="b1N-QK-wMH" secondAttribute="bottom" constant="485" id="JYX-nd-73O"/>
+                            <constraint firstAttribute="bottom" secondItem="gTE-n0-3dl" secondAttribute="bottom" id="MoW-R8-EOP"/>
+                            <constraint firstItem="b1N-QK-wMH" firstAttribute="top" secondItem="UJM-fd-vwQ" secondAttribute="top" constant="313" id="WFl-FV-Jvy"/>
+                            <constraint firstItem="gTE-n0-3dl" firstAttribute="trailing" secondItem="UJM-fd-vwQ" secondAttribute="trailing" id="dun-UI-HX4"/>
+                            <constraint firstItem="gTE-n0-3dl" firstAttribute="leading" secondItem="UJM-fd-vwQ" secondAttribute="leading" id="vgE-1b-2l3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="saz-D6-aDM"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="b1N-QK-wMH" id="xBr-h3-mft"/>
+                        <segue destination="YJ2-62-Dqt" kind="show" identifier="SEGUE_FROM_SPLASH_TO_MAIN" id="ykr-ng-FLE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uTb-CJ-cjc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-916" y="1"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="ZlZ-E0-0Sk">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c6g-ck-ecU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Main" id="YJ2-62-Dqt" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="CWa-kX-omP"/>
+                </viewControllerPlaceholder>
+            </objects>
+            <point key="canvasLocation" x="-267" y="1"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="img_launch" width="250" height="541.33331298828125"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
