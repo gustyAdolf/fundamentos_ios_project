@@ -7,27 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C48C5BD9257A517100DC33B5 /* VilliansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48C5BD8257A517100DC33B5 /* VilliansViewController.swift */; };
 		C4B030FA257779A900292E7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B030F9257779A900292E7C /* AppDelegate.swift */; };
 		C4B030FC257779A900292E7C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B030FB257779A900292E7C /* SceneDelegate.swift */; };
 		C4B030FE257779A900292E7C /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B030FD257779A900292E7C /* SplashViewController.swift */; };
-		C4B03101257779A900292E7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4B030FF257779A900292E7C /* Main.storyboard */; };
+		C4B03101257779A900292E7C /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4B030FF257779A900292E7C /* Home.storyboard */; };
 		C4B03103257779AB00292E7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4B03102257779AB00292E7C /* Assets.xcassets */; };
 		C4B03106257779AB00292E7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4B03104257779AB00292E7C /* LaunchScreen.storyboard */; };
-		C4B031192577B48400292E7C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B031182577B48400292E7C /* MainViewController.swift */; };
+		C4B031192577B48400292E7C /* SuperHeroesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B031182577B48400292E7C /* SuperHeroesViewController.swift */; };
 		C4B0312C2577D30600292E7C /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4B0311D2577BF5D00292E7C /* SplashScreen.storyboard */; };
 		C4B031352577DECD00292E7C /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B031342577DECD00292E7C /* Character.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C48C5BD8257A517100DC33B5 /* VilliansViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VilliansViewController.swift; sourceTree = "<group>"; };
 		C4B030F6257779A900292E7C /* AvengersApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AvengersApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4B030F9257779A900292E7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4B030FB257779A900292E7C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C4B030FD257779A900292E7C /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
-		C4B03100257779A900292E7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C4B03100257779A900292E7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
 		C4B03102257779AB00292E7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4B03105257779AB00292E7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4B03107257779AB00292E7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C4B031182577B48400292E7C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		C4B031182577B48400292E7C /* SuperHeroesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroesViewController.swift; sourceTree = "<group>"; };
 		C4B0311C2577BF5D00292E7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SplashScreen.storyboard; sourceTree = "<group>"; };
 		C4B031342577DECD00292E7C /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,7 +86,7 @@
 		C4B0310F257779BF00292E7C /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C4B030FF257779A900292E7C /* Main.storyboard */,
+				C4B030FF257779A900292E7C /* Home.storyboard */,
 				C4B03104257779AB00292E7C /* LaunchScreen.storyboard */,
 				C4B0311D2577BF5D00292E7C /* SplashScreen.storyboard */,
 			);
@@ -103,7 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				C4B030FD257779A900292E7C /* SplashViewController.swift */,
-				C4B031182577B48400292E7C /* MainViewController.swift */,
+				C4B031182577B48400292E7C /* SuperHeroesViewController.swift */,
+				C48C5BD8257A517100DC33B5 /* VilliansViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -168,7 +171,7 @@
 				C4B03106257779AB00292E7C /* LaunchScreen.storyboard in Resources */,
 				C4B0312C2577D30600292E7C /* SplashScreen.storyboard in Resources */,
 				C4B03103257779AB00292E7C /* Assets.xcassets in Resources */,
-				C4B03101257779A900292E7C /* Main.storyboard in Resources */,
+				C4B03101257779A900292E7C /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,21 +184,22 @@
 			files = (
 				C4B030FE257779A900292E7C /* SplashViewController.swift in Sources */,
 				C4B030FA257779A900292E7C /* AppDelegate.swift in Sources */,
+				C48C5BD9257A517100DC33B5 /* VilliansViewController.swift in Sources */,
 				C4B031352577DECD00292E7C /* Character.swift in Sources */,
 				C4B030FC257779A900292E7C /* SceneDelegate.swift in Sources */,
-				C4B031192577B48400292E7C /* MainViewController.swift in Sources */,
+				C4B031192577B48400292E7C /* SuperHeroesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C4B030FF257779A900292E7C /* Main.storyboard */ = {
+		C4B030FF257779A900292E7C /* Home.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				C4B03100257779A900292E7C /* Base */,
 			);
-			name = Main.storyboard;
+			name = Home.storyboard;
 			sourceTree = "<group>";
 		};
 		C4B03104257779AB00292E7C /* LaunchScreen.storyboard */ = {

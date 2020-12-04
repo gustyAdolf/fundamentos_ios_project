@@ -57,22 +57,22 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="activityIndicator" destination="b1N-QK-wMH" id="xBr-h3-mft"/>
-                        <segue destination="YJ2-62-Dqt" kind="show" identifier="SEGUE_FROM_SPLASH_TO_MAIN" id="ykr-ng-FLE"/>
+                        <segue destination="bj5-08-mqN" kind="show" id="NLC-Cp-wBW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uTb-CJ-cjc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-916" y="1"/>
         </scene>
-        <!--Main-->
-        <scene sceneID="ZlZ-E0-0Sk">
+        <!--Home-->
+        <scene sceneID="Gfg-2S-XJ6">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="c6g-ck-ecU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <viewControllerPlaceholder storyboardName="Main" id="YJ2-62-Dqt" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="CWa-kX-omP"/>
+                <viewControllerPlaceholder storyboardName="Home" id="bj5-08-mqN" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="k1A-lt-NkQ"/>
                 </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YHJ-oF-3MW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-267" y="1"/>
+            <point key="canvasLocation" x="-245" y="1"/>
         </scene>
     </scenes>
     <resources>

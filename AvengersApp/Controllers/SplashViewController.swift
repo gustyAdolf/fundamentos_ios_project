@@ -28,15 +28,15 @@ class SplashViewController: UIViewController {
     
     // MARK: - Private functions
     private func navigateNext() {
-        let goToMain: () -> Void = { [weak self] in
-            let storyBoardMain = UIStoryboard(name: "Main",
+        let goToHome: () -> Void = { [weak self] in
+            let storyBoardHome = UIStoryboard(name: "Home",
                                               bundle: nil)
-            if let destination = storyBoardMain.instantiateInitialViewController() {
+            if let destination = storyBoardHome.instantiateInitialViewController() {
                 self?.navigationController?.setViewControllers([destination],
                                                                animated: true)
             }
         }
-        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(3), execute: goToMain)
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(3), execute: goToHome)
     }
     
     
