@@ -12,6 +12,8 @@
 		C48C5BE6257AB94C00DC33B5 /* Superhero.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48C5BE5257AB94B00DC33B5 /* Superhero.swift */; };
 		C48C5BE9257AB95600DC33B5 /* Villian.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48C5BE8257AB95600DC33B5 /* Villian.swift */; };
 		C48C5BED257ABA6B00DC33B5 /* CharacterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48C5BEC257ABA6B00DC33B5 /* CharacterRepository.swift */; };
+		C48C5BF2257AC43300DC33B5 /* CharacterDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48C5BF1257AC43300DC33B5 /* CharacterDetailsViewController.swift */; };
+		C48C5BF6257AC6E400DC33B5 /* CharacterCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48C5BF5257AC6E400DC33B5 /* CharacterCellViewController.swift */; };
 		C4B030FA257779A900292E7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B030F9257779A900292E7C /* AppDelegate.swift */; };
 		C4B030FC257779A900292E7C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B030FB257779A900292E7C /* SceneDelegate.swift */; };
 		C4B030FE257779A900292E7C /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B030FD257779A900292E7C /* SplashViewController.swift */; };
@@ -28,6 +30,8 @@
 		C48C5BE5257AB94B00DC33B5 /* Superhero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Superhero.swift; sourceTree = "<group>"; };
 		C48C5BE8257AB95600DC33B5 /* Villian.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Villian.swift; sourceTree = "<group>"; };
 		C48C5BEC257ABA6B00DC33B5 /* CharacterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRepository.swift; sourceTree = "<group>"; };
+		C48C5BF1257AC43300DC33B5 /* CharacterDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsViewController.swift; sourceTree = "<group>"; };
+		C48C5BF5257AC6E400DC33B5 /* CharacterCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCellViewController.swift; sourceTree = "<group>"; };
 		C4B030F6257779A900292E7C /* AvengersApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AvengersApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4B030F9257779A900292E7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4B030FB257779A900292E7C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +63,14 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		C48C5BF4257AC6CA00DC33B5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C48C5BF5257AC6E400DC33B5 /* CharacterCellViewController.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		C4B030ED257779A900292E7C = {
 			isa = PBXGroup;
 			children = (
@@ -79,9 +91,9 @@
 			isa = PBXGroup;
 			children = (
 				C4B0310E257779BB00292E7C /* App */,
-				C4B03111257779D100292E7C /* Controllers */,
 				C4B03110257779C600292E7C /* Models */,
 				C4B0310F257779BF00292E7C /* Views */,
+				C4B03111257779D100292E7C /* Controllers */,
 			);
 			path = AvengersApp;
 			sourceTree = "<group>";
@@ -121,9 +133,11 @@
 		C4B03111257779D100292E7C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C48C5BF4257AC6CA00DC33B5 /* Cells */,
 				C4B030FD257779A900292E7C /* SplashViewController.swift */,
 				C4B031182577B48400292E7C /* SuperHeroesViewController.swift */,
 				C48C5BD8257A517100DC33B5 /* VilliansViewController.swift */,
+				C48C5BF1257AC43300DC33B5 /* CharacterDetailsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -204,10 +218,12 @@
 				C48C5BED257ABA6B00DC33B5 /* CharacterRepository.swift in Sources */,
 				C48C5BE6257AB94C00DC33B5 /* Superhero.swift in Sources */,
 				C4B030FA257779A900292E7C /* AppDelegate.swift in Sources */,
+				C48C5BF6257AC6E400DC33B5 /* CharacterCellViewController.swift in Sources */,
 				C48C5BD9257A517100DC33B5 /* VilliansViewController.swift in Sources */,
 				C4B030FC257779A900292E7C /* SceneDelegate.swift in Sources */,
 				C4B031192577B48400292E7C /* SuperHeroesViewController.swift in Sources */,
 				C48C5BE9257AB95600DC33B5 /* Villian.swift in Sources */,
+				C48C5BF2257AC43300DC33B5 /* CharacterDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

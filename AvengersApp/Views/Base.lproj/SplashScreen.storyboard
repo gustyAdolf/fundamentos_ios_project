@@ -57,7 +57,7 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="activityIndicator" destination="b1N-QK-wMH" id="xBr-h3-mft"/>
-                        <segue destination="bj5-08-mqN" kind="show" id="NLC-Cp-wBW"/>
+                        <segue destination="bj5-08-mqN" kind="show" identifier="SEGUE_FROM_SPLASH_TO_HOME" id="NLC-Cp-wBW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uTb-CJ-cjc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
