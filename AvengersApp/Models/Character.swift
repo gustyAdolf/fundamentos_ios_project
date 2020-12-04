@@ -11,5 +11,5 @@ struct Character {
     var image: String? = nil
     var name: String = ""
     var powerScore: Float = 0.0
-    var biography: String = ""
+    var description: String = ""
 }

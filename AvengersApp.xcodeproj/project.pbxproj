@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		C48C5BD9257A517100DC33B5 /* VilliansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48C5BD8257A517100DC33B5 /* VilliansViewController.swift */; };
 		C48C5BE1257AB59100DC33B5 /* CharacterCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C48C5BE0257AB59100DC33B5 /* CharacterCellView.xib */; };
+		C48C5BE6257AB94C00DC33B5 /* Superhero.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48C5BE5257AB94B00DC33B5 /* Superhero.swift */; };
+		C48C5BE9257AB95600DC33B5 /* Villian.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48C5BE8257AB95600DC33B5 /* Villian.swift */; };
+		C48C5BED257ABA6B00DC33B5 /* CharacterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48C5BEC257ABA6B00DC33B5 /* CharacterRepository.swift */; };
 		C4B030FA257779A900292E7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B030F9257779A900292E7C /* AppDelegate.swift */; };
 		C4B030FC257779A900292E7C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B030FB257779A900292E7C /* SceneDelegate.swift */; };
 		C4B030FE257779A900292E7C /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B030FD257779A900292E7C /* SplashViewController.swift */; };
@@ -17,12 +20,14 @@
 		C4B03106257779AB00292E7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4B03104257779AB00292E7C /* LaunchScreen.storyboard */; };
 		C4B031192577B48400292E7C /* SuperHeroesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B031182577B48400292E7C /* SuperHeroesViewController.swift */; };
 		C4B0312C2577D30600292E7C /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4B0311D2577BF5D00292E7C /* SplashScreen.storyboard */; };
-		C4B031352577DECD00292E7C /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B031342577DECD00292E7C /* Character.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C48C5BD8257A517100DC33B5 /* VilliansViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VilliansViewController.swift; sourceTree = "<group>"; };
 		C48C5BE0257AB59100DC33B5 /* CharacterCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterCellView.xib; sourceTree = "<group>"; };
+		C48C5BE5257AB94B00DC33B5 /* Superhero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Superhero.swift; sourceTree = "<group>"; };
+		C48C5BE8257AB95600DC33B5 /* Villian.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Villian.swift; sourceTree = "<group>"; };
+		C48C5BEC257ABA6B00DC33B5 /* CharacterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRepository.swift; sourceTree = "<group>"; };
 		C4B030F6257779A900292E7C /* AvengersApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AvengersApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4B030F9257779A900292E7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4B030FB257779A900292E7C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,7 +38,6 @@
 		C4B03107257779AB00292E7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4B031182577B48400292E7C /* SuperHeroesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroesViewController.swift; sourceTree = "<group>"; };
 		C4B0311C2577BF5D00292E7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SplashScreen.storyboard; sourceTree = "<group>"; };
-		C4B031342577DECD00292E7C /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +111,9 @@
 		C4B03110257779C600292E7C /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				C4B031342577DECD00292E7C /* Character.swift */,
+				C48C5BE5257AB94B00DC33B5 /* Superhero.swift */,
+				C48C5BE8257AB95600DC33B5 /* Villian.swift */,
+				C48C5BEC257ABA6B00DC33B5 /* CharacterRepository.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -195,11 +201,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4B030FE257779A900292E7C /* SplashViewController.swift in Sources */,
+				C48C5BED257ABA6B00DC33B5 /* CharacterRepository.swift in Sources */,
+				C48C5BE6257AB94C00DC33B5 /* Superhero.swift in Sources */,
 				C4B030FA257779A900292E7C /* AppDelegate.swift in Sources */,
 				C48C5BD9257A517100DC33B5 /* VilliansViewController.swift in Sources */,
-				C4B031352577DECD00292E7C /* Character.swift in Sources */,
 				C4B030FC257779A900292E7C /* SceneDelegate.swift in Sources */,
 				C4B031192577B48400292E7C /* SuperHeroesViewController.swift in Sources */,
+				C48C5BE9257AB95600DC33B5 /* Villian.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
